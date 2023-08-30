@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/headings.css">
+    <link rel="stylesheet" href="../Styles/Main.css">
+    <title>Risk Rating Calculator</title>
 </head>
 <body>
-    <h1>Risk Rating Calculator</h1>
-    <div>
-        <h2>Informaiton</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, eaque facilis laborum reiciendis est temporibus autem tempora dolor incidunt obcaecati soluta iste minus ut quod tenetur, ullam vitae, accusantium consequatur?</p>
-    </div>
-    <div id="riskRatingInputContainer">
-        <h2>Calculator</h2>
-        <div class="risk-rating-row">
-            <label for="yearFactorInpt">Year of Construciton Factor</label>
-            <input type="text" id="yearFactorInpt" placeholder="Fy">
+    <div id="inputFormContainer" class="input-form-container">
+        <h1>Risk Rating Calculator</h1>
+        <div>
+            <h2>Informaiton</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, eaque facilis laborum reiciendis est temporibus autem tempora dolor incidunt obcaecati soluta iste minus ut quod tenetur, ullam vitae, accusantium consequatur?</p>
         </div>
-        <div class="risk-rating-row">
-            <label for="formFactorInpt">Form Factor</label>
-            <input type="text" id="formFactorInpt" placeholder="Ff">
+        <div id="riskRatingInputContainer">
+            <h2>Calculator</h2>
+            <div class="risk-rating-row">
+                <label for="yearFactorInpt">Year of Construciton Factor</label>
+                <input type="text" id="yearFactorInpt" placeholder="Fy">
+            </div>
+            <div class="risk-rating-row">
+                <label for="formFactorInpt">Form Factor</label>
+                <input type="text" id="formFactorInpt" placeholder="Ff">
+            </div>
+            <div class="risk-rating-row">
+                <label for="vulnerableDetailFactorInpt">Form Factor</label>
+                <input type="text" id="vulnerableDetailFactorInpt" placeholder="Fv">
+            </div>
+            <div class="risk-rating-row">
+                <label for="conditionFactorInpt">Condiiton Factor</label>
+                <input type="text" id="conditionFactorInpt" placeholder="Fc">
+            </div>
+            <div class="risk-rating-row">
+                <label for="consequenceFactorInpt">Form Factor</label>
+                <input type="text" id="consequenceFactorInpt" placeholder="Fq">
+            </div>
         </div>
-        <div class="risk-rating-row">
-            <label for="vulnerableDetailFactorInpt">Form Factor</label>
-            <input type="text" id="vulnerableDetailFactorInpt" placeholder="Fv">
+    
+        <div>
+            <h2>Risk Rating</h2>
+            <p id="output">Output</p>
         </div>
-        <div class="risk-rating-row">
-            <label for="conditionFactorInpt">Condiiton Factor</label>
-            <input type="text" id="conditionFactorInpt" placeholder="Fc">
-        </div>
-        <div class="risk-rating-row">
-            <label for="consequenceFactorInpt">Form Factor</label>
-            <input type="text" id="consequenceFactorInpt" placeholder="Fq">
-        </div>
-    </div>
-
-    <div>
-        <h2>Risk Rating</h2>
-        <p id="output">Output</p>
     </div>
     <script src="RRCalculator.js"></script>
 </body>
