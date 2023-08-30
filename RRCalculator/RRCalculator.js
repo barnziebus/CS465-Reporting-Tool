@@ -1,17 +1,28 @@
-let inputElements = {
-    "yearFactorInpt": document.getElementById("yearFactorInpt"),
-    "consctionFactorInpt": document.getElementById("constructionFactorInpt"),
-    "conditionFactorInpt": document.getElementById("conditionFactorInpt"),
-    "vulnerableFactorInput": document.getElementById("vulnerableDetailFactorInpt"),
-    "consequenceFactorInpt": document.getElementById("consequenceFactorInpt"),
-    "formFactorInpt": document.getElementById("formFactorInpt")
-}
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    const inputEls = {
+        "yearFactorInpt": document.getElementById("yearFactorInpt"),
+        "formFactorInpt": document.getElementById("formFactorInpt"),
+        "vulnerableFactorInput": document.getElementById("vulnerableDetailFactorInpt"),
+        "conditionFactorInpt": document.getElementById("conditionFactorInpt"),
+        "consequenceFactorInpt": document.getElementById("consequenceFactorInpt"),
+    };
 
-for (let inputElement in inputElements) {
-    inputElements[inputElement].addEventListener("change", calculateRiskRating)
-}
+    const outputEl = document.getElementById("output");
 
+    for (let inputEl in inputEls) {
+        inputEls[inputEl].addEventListener("change", calculateRiskRating);
+    }
 
-function calculateRiskRating() {
-    console.log('Value changed')
-}
+    function calculateRiskRating() {
+        let Fy = parseFloat(inputEls["yearFactorInpt"].value);
+        let Ff = parseFloat(inputEls["formFactorInpt"].value);
+        let Fv = parseFloat(inputEls["vulnerableFactorInput"].value);
+        let Fc = parseFloat(inputEls["conditionFactorInpt"].value);
+        let Fq = parseFloat(inputEls["consequenceFactorInpt"].value);
+
+        let riskRating = ((100 * (((4 * Fy + Ff + Fv + Fc) * Fq) - 6)) / 254).toFixed(2);
+
+        outputEl.textContent = riskRating;
+    }
+});

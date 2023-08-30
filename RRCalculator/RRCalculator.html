@@ -12,32 +12,32 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, eaque facilis laborum reiciendis est temporibus autem tempora dolor incidunt obcaecati soluta iste minus ut quod tenetur, ullam vitae, accusantium consequatur?</p>
     </div>
     <div id="riskRatingInputContainer">
+        <h2>Calculator</h2>
         <div class="risk-rating-row">
             <label for="yearFactorInpt">Year of Construciton Factor</label>
-            <input type="text" id="yearFactorInpt" placeholder="Year of Construciton factor Ff">
+            <input type="text" id="yearFactorInpt" placeholder="Year factor Fy">
         </div>
         <div class="risk-rating-row">
             <label for="formFactorInpt">Form Factor</label>
             <input type="text" id="formFactorInpt" placeholder="Form factor Ff">
         </div>
         <div class="risk-rating-row">
+            <label for="vulnerableDetailFactorInpt">Form Factor</label>
+            <input type="text" id="vulnerableDetailFactorInpt" placeholder="Vulnerable and materials factor Fv">
+        </div>
+        <div class="risk-rating-row">
             <label for="conditionFactorInpt">Condiiton Factor</label>
             <input type="text" id="conditionFactorInpt" placeholder="Condition factor Fc">
-        </div>
-        <div class="risk-rating-row">
-            <label for="vulnerableDetailFactorInpt">Form Factor</label>
-            <input type="text" id="vulnerableDetailFactorInpt" placeholder="Vulnerable details and materials factor Fv">
-        </div>
-        <div class="risk-rating-row">
-            <label for="constructionFactorInpt">Form Factor</label>
-            <input type="text" id="constructionFactorInpt" placeholder="Year of construction factor Fy">
         </div>
         <div class="risk-rating-row">
             <label for="consequenceFactorInpt">Form Factor</label>
             <input type="text" id="consequenceFactorInpt" placeholder="Consequence factor Fq">
         </div>
+    </div>
 
-
+    <div>
+        <h2>Risk Rating</h2>
+        <p id="output">Output</p>
     </div>
     <script src="RRCalculator.js"></script>
 </body>
