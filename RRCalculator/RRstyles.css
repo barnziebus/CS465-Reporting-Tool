@@ -1,0 +1,29 @@
+.math-equation {
+    font-size: 20px;
+}
+
+.calculator-container {
+    width: 50%;
+}
+
+.input-grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Two equal-width columns */
+    gap: 10px; /* Gap between rows and columns */
+    align-items: center; /* Vertically center-align content */
+}
+
+.risk-rating-row {
+    display: grid;
+    grid-template-columns: 40px 1fr; /* Single column for both label and input */
+    gap: 10px; /* Gap between label and input */
+    align-items: center; /* Vertically center-align content */
+}
+
+label {
+    text-align: left; /* Align label text to the left */
+}
+
+input {
+    width: 100%; /* Ensure inputs take up the available space */
+}

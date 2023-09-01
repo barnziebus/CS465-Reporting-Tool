@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/headings.css">
+    <link rel="stylesheet" href="RRstyles.css">
     <link rel="stylesheet" href="../Styles/Main.css">
     <title>Risk Rating Calculator</title>
 </head>
@@ -12,37 +13,79 @@
         <h1>Risk Rating Calculator</h1>
         <div>
             <h2>Informaiton</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, eaque facilis laborum reiciendis est temporibus autem tempora dolor incidunt obcaecati soluta iste minus ut quod tenetur, ullam vitae, accusantium consequatur?</p>
+            <h3>How To</h3>
+            <p>To use the calculator input the variables identified from CS465</p>
+            <h3>Equation</h3>
+            <div class="math-equation">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mrow>
+                        <mi>R</mi>
+                        <mo>=</mo>
+                        <mn>100</mn>
+                        <mfrac>
+                            <mrow>
+                                <mo>(</mo>
+                                <mrow>
+                                   <mrow>
+                                      <mo>(</mo>
+                                      <mn>4</mn>
+                                      <msub><mi>F</mi><mi>Y</mi></msub>
+                                      <mo>+</mo>
+                                      <msub><mi>F</mi><mi>F</mi></msub>
+                                      <mo>+</mo>
+                                      <msub><mi>F</mi><mi>V</mi></msub>
+                                      <mo>+</mo>
+                                      <msub><mi>F</mi><mi>C</mi></msub>
+                                      <mo>)</mo>
+                                   </mrow>
+                                   <mi>Fq</mi>
+                                </mrow>
+                                <mo>)</mo>
+                                <mo>-</mo>
+                                <mn>6</mn>
+                             </mrow>
+                            <mrow>
+                                <mn>254</mn>
+                            </mrow>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </div>
         </div>
-        <div id="riskRatingInputContainer">
-            <h2>Calculator</h2>
+        
+    </div>
+
+    <div class="calculator-container">
+        <h2>Calculator</h2>
+        <div id="riskRatingInputContainer" class="input-grid-container">
             <div class="risk-rating-row">
-                <label for="yearFactorInpt">Year of Construciton Factor</label>
                 <input type="text" id="yearFactorInpt" placeholder="Fy">
+                <label for="yearFactorInpt">Year of Construction Factor</label>
             </div>
             <div class="risk-rating-row">
-                <label for="formFactorInpt">Form Factor</label>
                 <input type="text" id="formFactorInpt" placeholder="Ff">
+                <label for="formFactorInpt">Form Factor</label>
             </div>
             <div class="risk-rating-row">
-                <label for="vulnerableDetailFactorInpt">Form Factor</label>
                 <input type="text" id="vulnerableDetailFactorInpt" placeholder="Fv">
+                <label for="vulnerableDetailFactorInpt">Vulnerable Detail Factor</label>
             </div>
             <div class="risk-rating-row">
-                <label for="conditionFactorInpt">Condiiton Factor</label>
                 <input type="text" id="conditionFactorInpt" placeholder="Fc">
+                <label for="conditionFactorInpt">Condition Factor</label>
             </div>
             <div class="risk-rating-row">
-                <label for="consequenceFactorInpt">Form Factor</label>
                 <input type="text" id="consequenceFactorInpt" placeholder="Fq">
+                <label for="consequenceFactorInpt">Consequence Factor</label>
             </div>
-        </div>
-    
-        <div>
-            <h2>Risk Rating</h2>
-            <p id="output">Output</p>
         </div>
     </div>
+
+    <div>
+        <h2>Risk Rating</h2>
+        <p id="output">Output</p>
+    </div>
+
     <script src="RRCalculator.js"></script>
 </body>
 </html>
