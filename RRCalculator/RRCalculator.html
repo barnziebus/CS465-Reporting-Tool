@@ -52,39 +52,50 @@
                 </math>
             </div>
         </div>
-        
-    </div>
 
-    <div class="calculator-container">
-        <h2>Calculator</h2>
-        <div id="riskRatingInputContainer" class="input-grid-container">
-            <div class="risk-rating-row">
-                <input type="text" id="yearFactorInpt" placeholder="Fy">
-                <label for="yearFactorInpt">Year of Construction Factor</label>
+        <div class="calculator-container">
+            <h2>Calculator</h2>
+            <div id="riskRatingInputContainer" class="input-grid-container">
+                <div class="risk-rating-row">
+                    <select id="yearFactorInpt">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <label for="yearFactorInpt">Year of Construction Factor</label>
+                </div>
+                <div class="risk-rating-row">
+                    <input type="text" id="formFactorInpt" placeholder="Ff">
+                    <label for="formFactorInpt">Form Factor</label>
+                </div>
+                <div class="risk-rating-row">
+                    <input type="text" id="vulnerableDetailFactorInpt" placeholder="Fv">
+                    <label for="vulnerableDetailFactorInpt">Vulnerable Detail Factor</label>
+                </div>
+                <div class="risk-rating-row">
+                    <input type="text" id="conditionFactorInpt" placeholder="Fc">
+                    <label for="conditionFactorInpt">Condition Factor</label>
+                </div>
+                <div class="risk-rating-row">
+                    <select id="consequenceFactorInpt">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>                
+                    <label for="consequenceFactorInpt">Consequence Factor</label>
+                </div>
             </div>
-            <div class="risk-rating-row">
-                <input type="text" id="formFactorInpt" placeholder="Ff">
-                <label for="formFactorInpt">Form Factor</label>
-            </div>
-            <div class="risk-rating-row">
-                <input type="text" id="vulnerableDetailFactorInpt" placeholder="Fv">
-                <label for="vulnerableDetailFactorInpt">Vulnerable Detail Factor</label>
-            </div>
-            <div class="risk-rating-row">
-                <input type="text" id="conditionFactorInpt" placeholder="Fc">
-                <label for="conditionFactorInpt">Condition Factor</label>
-            </div>
-            <div class="risk-rating-row">
-                <input type="text" id="consequenceFactorInpt" placeholder="Fq">
-                <label for="consequenceFactorInpt">Consequence Factor</label>
-            </div>
+        </div>
+        <div>
+            <h2>Risk Rating</h2>
+            <p id="output">Output</p>
         </div>
     </div>
 
-    <div>
-        <h2>Risk Rating</h2>
-        <p id="output">Output</p>
-    </div>
 
     <script src="RRCalculator.js"></script>
 </body>
