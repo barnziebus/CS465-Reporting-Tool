@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const outputEl = document.getElementById("output");
 
     for (let inputEl in inputEls) {
-        inputEls[inputEl].addEventListener("change", calculateRiskRating);
+        inputEls[inputEl].addEventListener("input", calculateRiskRating);
     }
 
     function calculateRiskRating() {
