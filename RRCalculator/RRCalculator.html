@@ -6,52 +6,12 @@
     <link rel="stylesheet" href="../Styles/headings.css">
     <link rel="stylesheet" href="RRstyles.css">
     <link rel="stylesheet" href="../Styles/Main.css">
+    <link rel="stylesheet" href="../Styles/tables.css">
     <title>Risk Rating Calculator</title>
 </head>
 <body>
     <div id="inputFormContainer" class="input-form-container">
         <h1>Risk Rating Calculator</h1>
-        <div>
-            <h2>Informaiton</h2>
-            <h3>How To</h3>
-            <p>To use the calculator input the variables identified from CS465</p>
-            <h3>Equation</h3>
-            <div class="math-equation">
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <mrow>
-                        <mi>R</mi>
-                        <mo>=</mo>
-                        <mn>100</mn>
-                        <mfrac>
-                            <mrow>
-                                <mo>(</mo>
-                                <mrow>
-                                   <mrow>
-                                      <mo>(</mo>
-                                      <mn>4</mn>
-                                      <msub><mi>F</mi><mi>Y</mi></msub>
-                                      <mo>+</mo>
-                                      <msub><mi>F</mi><mi>F</mi></msub>
-                                      <mo>+</mo>
-                                      <msub><mi>F</mi><mi>V</mi></msub>
-                                      <mo>+</mo>
-                                      <msub><mi>F</mi><mi>C</mi></msub>
-                                      <mo>)</mo>
-                                   </mrow>
-                                   <mi>Fq</mi>
-                                </mrow>
-                                <mo>)</mo>
-                                <mo>-</mo>
-                                <mn>6</mn>
-                             </mrow>
-                            <mrow>
-                                <mn>254</mn>
-                            </mrow>
-                        </mfrac>
-                    </mrow>
-                </math>
-            </div>
-        </div>
 
         <div class="calculator-container">
             <h2>Calculator</h2>
@@ -94,7 +54,81 @@
             <h2>Risk Rating</h2>
             <p id="output">Output</p>
         </div>
+
+        <div>
+            <h2>Informaiton</h2>
+            <h3>How To</h3>
+            <p>To use the calculator input the variables identified from CS465</p>
+
+            <h3>Year of Construction</h3>
+            <table>
+                <tr>
+                    <th>Catagory</th>
+                    <th>Fy</th>
+                </tr>
+                <tr>
+                    <td>Before 1965</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1965 - 1975</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1975 - 1985</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1986 - 1996</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>After 1996</td>
+                    <td>1</td>
+                </tr>
+
+            </table>
+
+            <h2>Equation</h2>
+            <div class="math-equation">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mrow>
+                        <mi>R</mi>
+                        <mo>=</mo>
+                        <mn>100</mn>
+                        <mfrac>
+                            <mrow>
+                                <mo>(</mo>
+                                <mrow>
+                                   <mrow>
+                                      <mo>(</mo>
+                                      <mn>4</mn>
+                                      <msub><mi>F</mi><mi>Y</mi></msub>
+                                      <mo>+</mo>
+                                      <msub><mi>F</mi><mi>F</mi></msub>
+                                      <mo>+</mo>
+                                      <msub><mi>F</mi><mi>V</mi></msub>
+                                      <mo>+</mo>
+                                      <msub><mi>F</mi><mi>C</mi></msub>
+                                      <mo>)</mo>
+                                   </mrow>
+                                   <mi>Fq</mi>
+                                </mrow>
+                                <mo>)</mo>
+                                <mo>-</mo>
+                                <mn>6</mn>
+                             </mrow>
+                            <mrow>
+                                <mn>254</mn>
+                            </mrow>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </div>
+        </div>
     </div>
+
+
 
 
     <script src="RRCalculator.js"></script>

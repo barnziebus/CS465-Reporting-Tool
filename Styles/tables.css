@@ -1,0 +1,17 @@
+table, th, td {
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #0fc4c4;
+}
+tr:nth-child(odd) {
+    background-color: #238080;
+}
+
+
+/* Set the width of the first column */
+td:first-child, th:first-child {
+    width: 500px; /* Adjust the width as needed */
+}
