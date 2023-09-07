@@ -12,7 +12,7 @@ export class RiskAssessmentHazard {
         this.createTitle(container, title, divElement);
         this.createEventDescription(divElement, hazardInfo);
         this.createAdditionalInfo(divElement, hazardInfo);
-        this.createLiklihoodInfo(divElement, hazardInfo);
+        this.createLikelihoodInfo(divElement, hazardInfo);
         this.createConsequence(divElement, hazardInfo);
         this.createRiskManagementMeasures(divElement, hazardInfo);
 
@@ -119,10 +119,10 @@ export class RiskAssessmentHazard {
 
     }
 
-    createLiklihoodInfo(container, hazardInfo) {
+    createLikelihoodInfo(container, hazardInfo) {
         // create the liklihood info and add to the catagory container
         let header = document.createElement('h4');
-        header.innerText = 'Liklihood';
+        header.innerText = 'Likelihood';
         container.appendChild(header);
 
         // create the inline div container for the clipboard and content
@@ -130,7 +130,7 @@ export class RiskAssessmentHazard {
         divElement.classList.add('collapsed-content-inline')
 
         // create the clipboard element/icon
-        let clipboardEl = this.createClipboardElement(hazardInfo['Liklihood Info'])
+        let clipboardEl = this.createClipboardElement(hazardInfo['Likelihood Info'])
         clipboardEl.className = 'clipboard'
 
         // create a paragraph element for the liklihood info (text)
@@ -144,10 +144,10 @@ export class RiskAssessmentHazard {
         container.appendChild(divElement)
 
         // check if there is liklihood data for this hazard
-        if (hazardInfo['Liklihood Info'] === undefined) {
-            paraElement.innerText = 'Liklihood info has not been defined for this hazard';
+        if (hazardInfo['Likelihood Info'] === undefined) {
+            paraElement.innerText = 'Likelihood info has not been defined for this hazard';
         } else {
-            paraElement.innerText = hazardInfo['Liklihood Info'];
+            paraElement.innerText = hazardInfo['Likelihood Info'];
         };
 
         // add the click element to toggle the visible content

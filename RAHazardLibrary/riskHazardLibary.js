@@ -83,6 +83,14 @@ let RAHazardData = {
     "Tendons Located Close To The Upper Surface of The Deck Where Failure of The Deck Waterproofing May Lead To Corrosion": {
       "Catagory": "Vulnerable Details and Material Hazards",
       "Sub Catagory": "Prestressing System",
+      "Event Description": "Tendons in post-tensioned structures positioned near the outer surfaces are more vulnerable to water and contaminant ingress. In cases where the surfacing, waterproofing, or concrete has deteriorated, the decreased protective cover accelerates the potential for deterioration.",
+      "Additional Info": [
+        "Tendons within post-tensioned structures that are located near the outer surfaces are particularly susceptible to the penetration of water and contaminants. This susceptibility arises from their proximity to external elements and environmental factors.",
+        "In situations where the protective layers, such as surfacing materials, waterproofing membranes, or the quality of the concrete, have deteriorated over time, the reduced cover thickness amplifies the risk of potential deterioration. This means that any damage or degradation in these protective layers can compromise the integrity of the tendons and the overall structural stability.",
+        "For instance, if the surfacing material on a bridge deck deteriorates due to weathering or wear and tear, it can expose the tendons to moisture and corrosive agents. Similarly, if the waterproofing layer in a building's foundation weakens, it can allow water and contaminants to seep into the post-tensioned tendons, potentially leading to corrosion and reduced load-carrying capacity.",
+        "Therefore, regular maintenance and inspection of post-tensioned structures are crucial to identify and address any deterioration in protective layers promptly. This proactive approach can help mitigate the risk of tendon corrosion and ensure the long-term durability and safety of the structure."
+      ],
+      "Likelihood Info": "Example Text: When determining the likelihood you want to consider the minimum cover to the tendons and where they are located.",
       "Consequence Description": "If water, chlorides and sulfates were to penetrate the waterproofing, deck concrete and ducts, deterioration of the post-tensioning system would be likely to occur, resulting in loss of capacity and eventual structural failure.",
       "Consequence Rating": "High",
       "Risk Management Measures": ["Undertake further PTSI Site Investigations at tendon high points to determine the current condition of the post-tensioning system."]
@@ -155,6 +163,14 @@ let RAHazardData = {
     "Absence of An Adequate Drainage System": {
       "Catagory": "Vulnerable Details and Material Hazards",
       "Sub Catagory": "Water Management System",
+      "Event Description": "When a drainage system is absent or inadequate, water fails to drain effectively from the structure. This can result in the accumulation of stagnant water, increasing the risk of water infiltration into structural components. Such water ingress can accelerate the deterioration of elements, including bearings and other vital structural elements.",
+      "Additional Info": [
+        "In instances where a building or structure lacks a proper drainage system or where the existing system is insufficient, there is a critical issue with the removal of water. When precipitation, runoff, or other sources of water cannot be efficiently drained away from the structure, it can lead to the formation of stagnant pools or puddles. These stagnant water bodies can pose a significant threat to the structural integrity of the building.",
+        "The primary concern is that stagnant water, when allowed to accumulate, creates a situation where water ingress into various structural elements becomes more likely. Water infiltration can penetrate surfaces, joints, or vulnerable areas, causing damage over time. This, in turn, can compromise the overall stability and durability of the structure.",
+        "One specific area of concern is the potential harm to essential components like bearings. These components play a crucial role in supporting and distributing loads within a structure. When exposed to water infiltration, they become susceptible to corrosion and weakening. In the long term, this can result in structural instability and reduced safety.",
+        "Therefore, it is essential to ensure that a reliable and efficient drainage system is in place to prevent the accumulation of stagnant water and the associated risks it poses to structural elements. Proper maintenance and design considerations for drainage are integral to safeguarding the longevity and functionality of the structure."
+      ],
+      "Likelihood Info": "Look for signs of water ingress from the most recent PI and GI. Deterioration to the bearings is a sign that the drainage system is not funcitoning correctly. Do not consider weep holes in abutments as they (in most cases) do not affect the post-tensioned elements",
       "Consequence Description": "Ponding water on the carriageway could lead to deterioration of the surfacing and waterproofing. Water could also become trapped inside structure voids causing corrosion of reinforcement and deterioration of concrete.",
       "Consequence Rating": "Medium",
       "Risk Management Measures": [
@@ -244,6 +260,14 @@ let RAHazardData = {
     "Cracking In Prestressed Concrete Sections": {
       "Catagory": "Condition Hazards - External",
       "Sub Catagory": "Cracking",
+      "Event Description": "Cracking in prestressed concrete sections can result in the infiltration of water and contaminants, accelerating the deterioration of the ducts and tendons. Furthermore, cracks in prestressed elements may also indicate stress concentrations, depending on their location and orientation.",
+      "Additional Info": [
+        "Cracking in prestressed concrete sections is a critical concern within structural engineering and construction. These cracks can have multifaceted consequences that affect both the immediate structural integrity and the long-term durability of the components.",
+        "First and foremost, when cracks develop in prestressed concrete sections, they create pathways for the ingress of water and contaminants. This infiltration of moisture and harmful substances can be particularly detrimental. Water can corrode the reinforcement ducts and tendons embedded within the concrete, compromising their structural integrity and potentially leading to costly repairs or replacements.",
+        "Furthermore, the presence of cracks in prestressed elements can serve as indicators of localized stress concentrations. Stress concentrations occur when forces are not evenly distributed throughout a structure, leading to areas of heightened stress. The location and orientation of these cracks can provide valuable insights into the specific areas experiencing excessive stress. Identifying these stress concentrations early on is crucial for engineers and construction professionals as it enables them to make necessary adjustments to ensure the structural safety and longevity of the concrete elements.",
+        "In summary, cracking in prestressed concrete sections is a complex issue with far-reaching implications. It not only accelerates the deterioration of embedded components but also serves as a diagnostic tool for identifying stress concentrations. Therefore, proactive monitoring and maintenance are essential in addressing and mitigating these challenges in concrete structures."
+      ],
+      "Likelihood Info": "Cracking in post-tensioned elements should be noted in the most recent PI. Severe cracking may be picked up during the most recent GI. Any SIs where visual inspection is recorded will note any cracking along with previous PTSI reports.",
       "Consequence Description": "Deterioration of the post-tensioning system leading to loss of capacity and eventual structural failure.",
       "Consequence Rating": "High",
       "Risk Management Measures": [
@@ -390,7 +414,7 @@ let RAHazardData = {
       "Sub Catagory": "Spalling",
       "Consequence Description": "The localised areas of exposed reinforcement corrode causing loss of section and further concrete spalling. Defects are likely to be localised and not cause deterioration to the post-tensioning ducts or tendons.",
       "Consequence Rating": "Low",
-      "Event Description": "Spalling, whether caused by corrosion of reinforcement or freeze-thaw action, can result in the loss of concrete sections. This loss of concrete cover exposes the reinforcement and post-tensioned ducts, posing significant risks to the structural integrity of the elements.",
+      "Event Description": "Spalling, whether caused by corrosion of reinforcement or freeze-thaw action, can result in the loss of concrete sections. This loss of concrete cover exposes the reinforcement and (potentially) the post-tensioned ducts.",
       "Additional Info": [
         "Spalling refers to the breaking, chipping, or flaking off of concrete surfaces. It can occur due to various factors, including the corrosion of reinforcement or the cyclic freezing and thawing of moisture within the concrete.",
         "When reinforcement corrodes, it expands and causes internal pressure on the surrounding concrete. This pressure leads to cracking and spalling of the concrete cover. Similarly, during freeze-thaw cycles, water trapped within the concrete expands upon freezing, creating internal stresses that can result in cracking and spalling.",
@@ -415,6 +439,17 @@ let RAHazardData = {
     "Visual Evidence Of Reinforcement Corrosion": {
       "Catagory": "Condition Hazards - External",
       "Sub Catagory": "Reinforcement Corrosion",
+      "Event Description": "Visual evidence of corrosion in the structural reinforcement suggests that the protective concrete cover is not effectively performing its function. This corrosion could result from chloride ingress or exposure to environmental elements. If left unchecked, the corrosion will worsen, leading to further deterioration.",
+      "Additional Info": [
+        "Visual evidence of corrosion in the structural reinforcement is a cause for concern, as it indicates that the protective concrete cover is not functioning correctly. This corrosion may be attributed to the ingress of chlorides or prolonged exposure to harsh environmental elements.",
+        "If this corrosion issue remains unaddressed, it poses a significant risk of exacerbation. Over time, the corrosion process can lead to the deterioration of the structural integrity of the affected components. This deterioration can manifest in several ways:",
+        "Reduced Load-Bearing Capacity: Corrosion weakens the steel reinforcement, diminishing its load-bearing capacity. As a result, the structure becomes less capable of supporting the expected loads, potentially leading to structural failure or collapse.",
+        "Cracking and Spalling: Corroded reinforcement can cause the surrounding concrete to crack and spall, further compromising the structural integrity. These surface defects not only diminish the aesthetics of the structure but also expose the reinforcement to more extensive corrosion.",
+        "Increased Maintenance Costs: Neglecting corrosion can escalate maintenance costs significantly. Addressing the issue at an advanced stage may require extensive repairs or even structural replacement, incurring substantial expenses.",
+        "Safety Concerns: As the corrosion progresses, there is an increased risk to the safety of occupants or users of the structure. Corrosion-related failures can lead to accidents, injuries, or fatalities.",
+        "To prevent these undesirable outcomes, it is crucial to take prompt corrective measures. This may involve repairing or replacing corroded reinforcement, improving the protective measures for the concrete cover, and implementing a maintenance plan to monitor and prevent further corrosion.",
+        "In conclusion, the presence of corrosion in the structural reinforcement signals a potentially serious issue that, if left unattended, can result in progressive structural deterioration, increased costs, and safety hazards. Timely intervention and preventive measures are essential to ensure the long-term integrity and safety of the structure."
+      ],
       "Consequence Description": "The localised areas of exposed reinforcement corrode causing loss of section and further concrete spalling. Defects are likely to be localised and not cause deterioration to the post-tensioning ducts or tendons.",
       "Consequence Rating": "Low",
       "Risk Management Measures": [
@@ -425,6 +460,10 @@ let RAHazardData = {
     "Adverse Half-Cell And Chloride Test Results": {
       "Catagory": "Condition Hazards - External",
       "Sub Catagory": "Reinforcement Corrosion",
+      "Event Description": "Signs of potential corrosion activity within the structural reinforcement can be detected through the assessment of half-cell potentials or chloride ion concentrations. These testing methods are employed to predict areas at risk of corrosion, eliminating the need for visual confirmation.",
+      "Additional Info": [
+        "Reinforcement corrosion can have detrimental effects on the surrounding concrete. As corrosion progresses, it causes the steel reinforcement to expand, leading to cracking and spalling of the concrete. This compromises the structural integrity, aesthetics, and overall durability of the concrete. Furthermore, the corrosion byproducts, such as rust, occupy a greater volume than the original steel, exerting additional pressure on the concrete and exacerbating the damage. Timely detection and mitigation of corrosion through methods like half-cell potentials and chloride ion analysis are crucial to prevent these destructive consequences and extend the life of the structure."
+      ],
       "Consequence Description": "Corrosion activity is likely leading to reinforcement corrosion and delamination of concrete. Although not directly affecting the post-tensioning system, a reduction in concrete cover to the ducts will increase the possibility of deterioration of the post-tensioning system.",
       "Consequence Rating": "Low",
       "Risk Management Measures": [
@@ -859,7 +898,7 @@ let RAHazardData = {
       ],
       "Consequence Description": "Should deterioration be discovered, there would be a delay in determining the effect on the structure.",
       "Consequence Rating": "Low",
-      "Risk Management Measures": ["As and when there is significant deterioration found, submit a Structural Review Form as required in BD 101."]
+      "Risk Management Measures": ["As and when there is significant deterioration found, submit a Structural Review Form"]
     },
     "Assessment Has Not Identified And Considered All Possible Failure Modes": {
       "Catagory": "Assessment Hazards",
@@ -875,7 +914,7 @@ let RAHazardData = {
       ],
       "Consequence Description": "Should deterioration be discovered, there would be a delay in determining the effect on the structure.",
       "Consequence Rating": "Low",
-      "Risk Management Measures": ["RMM TBC"]
+      "Risk Management Measures": ["As and when there is significant deterioration found, submit a Structural Review Form to identify the possible failure modes."]
     }
   }
 
