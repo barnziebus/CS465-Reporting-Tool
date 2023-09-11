@@ -1,0 +1,35 @@
+.cp-input{
+    color: aliceblue;
+    background-color: transparent;
+    width: 50px;
+    border: none;
+    border-bottom: solid grey 2px;
+    text-align: center;
+    transition: background-color ease 0.3s;
+}
+
+.cp-input:hover{
+    background-color: rgb(58, 57, 57);
+    transition: background-color ease 0.3s;
+}
+
+.cp-input:focus{
+    background-color: rgb(58, 57, 57);
+    outline: none;
+}
+
+.math-header{
+    padding-bottom: 15px;
+}
+
+.split-container{
+    display: flex;
+}
+
+.section-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 350px;
+    border: solid transparent 2px;
+    overflow: visible;
+}

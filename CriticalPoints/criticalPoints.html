@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://barnziebus.github.io/CS465-Reporting-Tool/Styles/navbars.css">
     <link rel="stylesheet" href="https://barnziebus.github.io/CS465-Reporting-Tool/Styles/headings.css">
-    <link rel="stylesheet" href="https://barnziebus.github.io/CS465-Reporting-Tool/Styles/Main.css">
+    <link rel="stylesheet" href="https://barnziebus.github.io/CS465-Reporting-Tool/Styles/Main.css"> <!-- change back to github link when pushing changes -->
+    <link rel="stylesheet" href="https://barnziebus.github.io/CS465-Reporting-Tool/criticalPoints.css"> <!-- change back to github link when pushing changes -->
     <link rel="stylesheet" href="https://barnziebus.github.io/CS465-Reporting-Tool/Styles/tables.css">
-    <title>Document</title>
+    <title>CS465 - Critical Points</title>
 </head>
 <body>
     <div class="top-nav-bar">
@@ -17,30 +18,116 @@
         <a href="https://barnziebus.github.io/CS465-Reporting-Tool/CriticalPoints/criticalPoints.html" class="active">Critical Points</a>
     </div>
 
-    <h1>Critical Points Calculation</h1>
+    <div class="section-container">
+        <h1>Critical Points/Sections Calculation</h1>
+    </div>
 
-    <div>
-        <h2>Input Critical Points</h2>
-        <div>
-            <input type="text" id="long-input">Longitudinal Points</input>
+    <div class="section-container">
+        <h2>What Are Critical Points/Sections?</h2>
+        <p>
+            A critical section refers to a vulnerable area susceptible to the infiltration of moisture, water, and contaminants that may trigger 
+            corrosion within the post-tensioning system. These critical sections encompass regions where voids could potentially develop within 
+            ducts or where stress concentration points might form, leading to structural failure.
+        </p>
+        <p>
+            In compliance with CS 465 guidelines, the identification of critical sections constitutes an integral component of the risk assessment 
+            process. These calculations serve as the baseline for determination of the necessary quantity of Duct and Tendon Exposures 
+            (DTEs) and/or End Anchorage Exposures (EAEs) needed to inspect a particular structure.
+        </p>
+        <p>
+            Where a structure has both longitudinal and transverse post-tensioning, the method for calculating the number of critical points has been 
+            amended in CS 465, with the two orientations of post-tensioning being addressed separately. The number of critical points and subsequent 
+            recommendations for the number of exposures required are calculated by post-tensioning type.
+        </p>
+    </div>
+
+    <div class="split-container">
+        <div class="section-container">
+            <h2>Critical Points Calculator</h2>
+            <h3>Input</h3>
+            <div>
+                <input type="number" id="long-input" class="cp-input"> Longitudinal Points</input>
+            </div>
+            <div>        
+                <input type="number" id="trans-input" class="cp-input"> Transverse Points</input>
+            </div>
+    
+    
+            <h3>Number of Exposures</h3>
+            <div>
+                <span>Number of Longitudinal Exposures:</span>
+                <span id="long-output">0</span>
+                <span id="long-percentage">(0.0%)</span>
+            </div>
+            <div>
+                <span>Number of Transverse Exposures: </span>
+                <span id="trans-output">0</span>
+                <span id="trans-percentage">(0.0%)</span>
+            </div>
         </div>
-        <div>        
-            <input type="text" id="trans-input">Transverse Points</input>
+    
+        <div class="section-container">
+            <h2>The Equations</h2>
+            <h3>Longitudinal</h3>
+            <div>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" class="math-header">
+                    <msub><mi>C</mi><mi>L</mi></msub>
+                    <mo>=</mo>
+                    <mn>3.57</mn>
+                    <mo>&#x22C5;</mo> <!-- This is a thin space to separate 3.57 and CPL -->
+                    <msup><msub><mi>C</mi><mi>PL</mi></msub><mn>0.36</mn></msup>
+                </math>
+            </div>
+            <div>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub><mi>C</mi><mi>L</mi></msub>
+                    <mo>=</mo>
+                    <mn>Recommended number of longitudinal exposures</mn>
+                </math>
+            </div>
+            <div>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub><mi>C</mi><mi>PL</mi></msub>
+                    <mo>=</mo>
+                    <mn>Longitudinal critical points</mn>
+                </math>
+            </div>
+            <h3>Transverse</h3>
+            <div class="math-header">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub><mi>C</mi><mi>T</mi></msub>
+                    <mo>=</mo>
+                    <mn>1.21</mn>
+                    <mo>&#x22C5;</mo> <!-- This is a thin space to separate 3.57 and CPL -->
+                    <msup><msub><mi>C</mi><mi>PT</mi></msub><mn>0.36</mn></msup>
+                </math>
+            </div>
+            <div>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub><mi>C</mi><mi>T</mi></msub>
+                    <mo>=</mo>
+                    <mn>Recommended number of transverse exposures</mn>
+                </math>
+            </div>
+            <div>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub><mi>C</mi><mi>PT</mi></msub>
+                    <mo>=</mo>
+                    <mn>Transverse critical points</mn>
+                </math>
+            </div>
         </div>
     </div>
 
-    <div>
-        <h2>Number of Exposures</h2>
-        <div>
-            <span>Number of Longitudinal Exposures:</span>
-            <span id="long-output">0</span>
-            <span id="long-percentage">(0.0%)</span>
-        </div>
-        <div>
-            <span>Number of Transverse Exposures: </span>
-            <span id="trans-output">0</span>
-            <span id="trans-percentage">(0.0%)</span>
-        </div>
+    <div class="section-container">
+        <h2>Determining Critical Points</h2>
+        <h3>Typical Locations</h3>
+        <ul>
+            <li>End anchorages</li>
+            <li>High points (hoggoing) along the tendon profile (Eg. over intermediate piers)</li>
+            <li>Low points (sagging) along the tendon profile (Eg. midspan)</li>
+            <li>Yeild pont at midspan</li>
+        </ul>
     </div>
 
     <script src="criticalPoints.js" type="module"></script>
