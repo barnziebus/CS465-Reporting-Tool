@@ -202,6 +202,13 @@ let RAHazardData = {
     "Absent of Deck Joint Seals": {
       "Catagory": "Vulnerable Details and Material Hazards",
       "Sub Catagory": "Water Management System",
+      "Event Description": "When deck joint seals are absent, water can readily penetrate the structure, leading to the deterioration of bearings and potential contamination of the end anchorage region of the post-tensioning system",
+      "Additional Info": [
+        "In instances where deck joint seals are missing or compromised, the structural integrity of the infrastructure is at risk. The absence of these seals allows water to easily infiltrate the structure, potentially causing significant damage over time.",
+        "The consequences of this water penetration can be twofold. First, it can lead to the deterioration of essential components such as bearings, which play a critical role in supporting and facilitating the movement of the structure. As water seeps into these areas, it can corrode and weaken the bearings, compromising their ability to function effectively. This deterioration can ultimately result in reduced structural stability and safety concerns.",
+        "Secondly, the ingress of water can contaminate the end anchorage region of the post-tensioning system. Post-tensioning is a vital technique used to reinforce concrete structures. When water enters this area, it can introduce corrosive agents and accelerate the deterioration of the post-tensioning components. Over time, this can compromise the structural strength and longevity of the entire system, potentially leading to costly repairs and safety hazards.",
+        "In summary, the absence of deck joint seals not only allows water to penetrate the structure but also puts the bearings and post-tensioning system at risk, ultimately jeopardizing the overall structural integrity and safety of the infrastructure.",
+      ],
       "Consequence Description": "Local deterioration (at an unknown rate) of the post-tensioned end anchorages with potentially no loss of capacity or failure if the post-tensioned tendons are well grouted near end anchorages. Local deterioration (delamination, spalling and corrosion) to the concrete and reinforcement.",
       "Consequence Rating": "Medium",
       "Risk Management Measures": ["Consider installing suitable deck joint seals to prevent the ingress of water."]
