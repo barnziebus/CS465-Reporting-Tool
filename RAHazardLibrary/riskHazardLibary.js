@@ -772,6 +772,23 @@ let RAHazardData = {
       "Consequence Rating": "Low",
       "Risk Management Measures": ["RMM TBC"]
     },
+    "Maintenance Actions Identified in Previous Inspection Reports Have Not Been Completed": {
+      "Catagory": "History Hazards",
+      "Sub Catagory": "Operation",
+      "Event Description": "Neglecting previously identified maintenance actions in post-tensioned structures can lead to severe consequences, including tendon deterioration, concrete degradation, safety risks, and increased repair costs.",
+      "Additional Info": [
+        "In the context of post-tensioned structures, it is paramount to emphasize the significance of addressing previously identified maintenance actions promptly. These structures, characterized by their use of high-strength steel tendons encased in concrete, are subject to unique maintenance requirements. When maintenance tasks specific to post-tensioned structures, such as tendon inspections, grouting assessments, or corrosion control measures, are deferred or overlooked, the consequences can be particularly severe.",
+        "Over time, the lack of attention to post-tensioned elements may result in the following:",
+        "Tendon Deterioration: The steel tendons within post-tensioned structures are critical for maintaining structural integrity. When maintenance is delayed, these tendons can be susceptible to corrosion or tension loss, potentially leading to reduced load-carrying capacity or structural failure.",
+        "Concrete Degradation: The concrete surrounding the tendons may also degrade due to exposure to environmental factors or the effects of tensioning. Unaddressed maintenance can accelerate this deterioration, compromising the structure's overall durability.",
+        "Safety Risks: Post-tensioned structures are often found in critical infrastructure, such as bridges and high-rise buildings. Neglected maintenance poses safety risks to the public and can result in costly emergency repairs or even structural failures, with potentially catastrophic consequences.",
+        "Increased Repair Costs: Deferred maintenance can lead to a snowball effect where the cost and complexity of repairs increase exponentially. What might have been a minor issue if addressed promptly can turn into a major and costly undertaking when left unattended.",
+        "In summary, the importance of timely and thorough maintenance for post-tensioned structures cannot be overstated. Regular inspections, monitoring, and action on identified maintenance needs are essential for preserving the structural integrity, safety, and longevity of these complex and critical engineering marvels.",
+      ],
+      "Consequence Description": "The extent and severity of historic defects may have detiorated.",
+      "Consequence Rating": "Medium",
+      "Risk Management Measures": ["Ensure that remedial works and maintenance actions are completed."]
+    },
     "Changes In Loading": {
       "Catagory": "History Hazards",
       "Sub Catagory": "Operation",
