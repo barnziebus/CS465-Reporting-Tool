@@ -785,7 +785,7 @@ let RAHazardData = {
         "Increased Repair Costs: Deferred maintenance can lead to a snowball effect where the cost and complexity of repairs increase exponentially. What might have been a minor issue if addressed promptly can turn into a major and costly undertaking when left unattended.",
         "In summary, the importance of timely and thorough maintenance for post-tensioned structures cannot be overstated. Regular inspections, monitoring, and action on identified maintenance needs are essential for preserving the structural integrity, safety, and longevity of these complex and critical engineering marvels.",
       ],
-      "Consequence Description": "The extent and severity of historic defects may have detiorated.",
+      "Consequence Description": "The extent and severity of any historic defects previously identified for maintenance actions may have deteriorated.",
       "Consequence Rating": "Medium",
       "Risk Management Measures": ["Ensure that remedial works and maintenance actions are completed."]
     },
