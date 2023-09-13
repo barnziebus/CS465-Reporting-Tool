@@ -1,0 +1,7 @@
+.glossary-table{
+    width: 100%;
+}
+
+.glossary-table th, td {
+    padding: 5px;
+}

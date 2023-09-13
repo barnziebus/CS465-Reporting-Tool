@@ -24,13 +24,5 @@
 
 .split-container{
     display: flex;
-    
-}
 
-.section-container {
-    padding-left: 10px;
-    padding-right: 10px;
-    min-width: 350px;
-    border: solid transparent 2px;
-    overflow: visible;
 }

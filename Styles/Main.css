@@ -11,3 +11,11 @@ body {
 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
+.section-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 350px;
+    border: solid transparent 2px;
+    overflow: visible;
+}
