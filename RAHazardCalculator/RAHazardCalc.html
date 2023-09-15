@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RAHazardCalc.css">
+    <link rel="stylesheet" href="https://barnziebus.github.io/CS465-Reporting-Tool/Styles/navbars.css">
+    <link rel="stylesheet" href="https://barnziebus.github.io/CS465-Reporting-Tool/Styles/headings.css">
+    <link rel="stylesheet" href="https://barnziebus.github.io/CS465-Reporting-Tool/Styles/Main.css">
+    <title>CS 465 - RA Hazards</title>
+</head>
+<body>
+    <div class="top-nav-bar">
+        <a href="https://barnziebus.github.io/CS465-Reporting-Tool/index.html">Home</a>
+        <a href="https://barnziebus.github.io/CS465-Reporting-Tool/RRCalculator/RRCalculator.html">Risk Rating Calculator</a>
+        <a href="https://barnziebus.github.io/CS465-Reporting-Tool/RAHazardLibrary/riskHazardLibrary.html">Risk Hazard Library</a>
+        <a href="./RAHazardCalc.html" class="active">Risk Hazard Calculator</a>
+        <a href="https://barnziebus.github.io/CS465-Reporting-Tool/CriticalPoints/criticalPoints.html">Critical Points</a>
+        <a href="https://barnziebus.github.io/CS465-Reporting-Tool/Glossary/glossary.html">Glossary</a>
+    </div>
+
+    <div class="section-container"><h1>Risk Hazard Level Calculator</h1></div>
+    
+    <div class="section-container">
+        <table id="hazard-table" class="rhl-table">
+            <tr>
+                <th>Risk Assessment Hazard</th>
+                <th>Likelihood</th>
+                <th>Consequence</th>
+                <th>Hazard Level</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section-container">
+        <button id="add row button">Add Row</button>
+    </div>
+    
+    <script src="RHLRow.js" type="module"></script>
+    <script src="RAHazardCalc.js" type="module"></script>
+</body>
+</html>
