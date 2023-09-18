@@ -21,21 +21,64 @@
 
     <div class="section-container"><h1>Risk Hazard Level Calculator</h1></div>
     
-    <div class="section-container">
-        <table id="hazard-table" class="rhl-table">
-            <tr>
-                <th>Risk Assessment Hazard</th>
-                <th>Likelihood</th>
-                <th>Consequence</th>
-                <th>Hazard Level</th>
-                <th>Delete</th>
-            </tr>
-        </table>
+    <div class="split-container">
+        <div class="left-container">
+            <table id="hazard-table" class="rhl-table">
+                <tr>
+                    <th>Risk Assessment Hazard</th>
+                    <th>Likelihood</th>
+                    <th>Consequence</th>
+                    <th>Hazard Level</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+            <div class="section-container">
+                <button id="add row button">Add Row</button>
+            </div>
+        </div>
+        <div class="right-container">
+            <h2>Summary</h2>
+            <table id="hazard-table" class="rhl-summary-table">
+                <tr>
+                    <th>Hazard Risk Level</th>
+                    <th>No.</th>
+                </tr>
+                <tr>
+                    <td>Very High (VH)</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>High (H)</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Medium (M)</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Low (L)</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Very Low (VL)</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Negligible (N)</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <th>Sum of hazards</th>
+                    <td>N/A</td>
+                </tr>                
+                <tr>
+                    <th>Mean of hazards</th>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </div>
     </div>
 
-    <div class="section-container">
-        <button id="add row button">Add Row</button>
-    </div>
     
     <script src="RHLRow.js" type="module"></script>
     <script src="RAHazardCalc.js" type="module"></script>

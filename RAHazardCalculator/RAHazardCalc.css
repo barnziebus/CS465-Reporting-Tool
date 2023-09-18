@@ -36,3 +36,27 @@ input:focus{
     outline: none;
     border-bottom: solid rgb(37, 155, 179) 2px;
 }
+
+.split-container{
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Adjust the fixed column width as needed */
+    gap: 20px; /* Adjust gap between columns as needed */
+    height: 100vh;
+    position: relative;
+}
+
+.rhl-summary-table{
+    width: 100%;
+}
+
+.left-container{
+    overflow-y: auto;
+}
+
+.right-container{
+    position: sticky;
+    top: 0;
+    height: 100%; /* Add this property to make it fixed */
+    overflow-y: auto; /* Add overflow-y for scrolling */
+    z-index: 1;
+}
