@@ -38,7 +38,7 @@
         </div>
         <div class="right-container">
             <h2>Summary</h2>
-            <table id="hazard-table" class="rhl-summary-table">
+            <table id="summary-table" class="rhl-summary-table">
                 <tr>
                     <th>Hazard Risk Level</th>
                     <th>No.</th>
@@ -69,11 +69,11 @@
                 </tr>
                 <tr>
                     <th>Sum of hazards</th>
-                    <td>N/A</td>
+                    <td id="sum">N/A</td>
                 </tr>                
                 <tr>
                     <th>Mean of hazards</th>
-                    <td>N/A</td>
+                    <td id="mean">N/A</td>
                 </tr>
             </table>
         </div>
@@ -81,6 +81,7 @@
 
     
     <script src="RHLRow.js" type="module"></script>
+    <script src="summaryCalc.js" type="module"></script>
     <script src="RAHazardCalc.js" type="module"></script>
 </body>
 </html>

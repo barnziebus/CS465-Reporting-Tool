@@ -1,9 +1,9 @@
 export class Row{
-    constructor(tableContainer, setSummaryFunc) {
+    constructor(tableContainer, displaySummary) {
         this.rowEls = {}
-        this.setSummaryFunc = setSummaryFunc
+        this.displaySummary = displaySummary
         
-        this.createRow(tableContainer, setSummaryFunc)
+        this.createRow(tableContainer)
     }
 
     createRow(tableContainer) {
@@ -94,6 +94,7 @@ export class Row{
 
         deleteButton.addEventListener("click", () => {
             rowContainer.remove()
+            this.displaySummary()
         })
 
         deleteCell.appendChild(deleteButton);
@@ -133,11 +134,11 @@ export class Row{
     addRowListeners() {
         this.rowEls["likelihood"].addEventListener("change", () => {
             this.updateRHL()
-            this.setSummaryFunc()
+            this.displaySummary()
         })
         this.rowEls["consequence"].addEventListener("change", () => {
             this.updateRHL()
-            this.setSummaryFunc()
+            this.displaySummary()
         })
     }
 
