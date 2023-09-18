@@ -1,8 +1,9 @@
 export class Row{
-    constructor(tableContainer) {
+    constructor(tableContainer, setSummaryFunc) {
         this.rowEls = {}
+        this.setSummaryFunc = setSummaryFunc
         
-        this.createRow(tableContainer)
+        this.createRow(tableContainer, setSummaryFunc)
     }
 
     createRow(tableContainer) {
@@ -131,12 +132,12 @@ export class Row{
 
     addRowListeners() {
         this.rowEls["likelihood"].addEventListener("change", () => {
-            console.log("liklihood changed")
             this.updateRHL()
+            this.setSummaryFunc()
         })
         this.rowEls["consequence"].addEventListener("change", () => {
-            console.log("consequence changed")
             this.updateRHL()
+            this.setSummaryFunc()
         })
     }
 
@@ -164,8 +165,6 @@ export class Row{
             "H":   {bg: "rgb(252, 100, 32)",  text: "aliceblue"},
             "VH":  {bg: "rgb(252, 39, 4)",    text: "aliceblue"}
         }
-
-        console.log(rhlCols[riskHazardLevel])
 
         return rhlCols[riskHazardLevel];
     }
