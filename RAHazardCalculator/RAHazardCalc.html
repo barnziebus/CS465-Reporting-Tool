@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://barnziebus.github.io/CS465-Reporting-Tool/Styles/navbars.css">
     <link rel="stylesheet" href="https://barnziebus.github.io/CS465-Reporting-Tool/Styles/headings.css">
     <link rel="stylesheet" href="https://barnziebus.github.io/CS465-Reporting-Tool/Styles/Main.css">
+
+    <!-- <link rel="stylesheet" href="./RAHazardCalc.css">
+    <link rel="stylesheet" href="../Styles/navbars.css">
+    <link rel="stylesheet" href="../Styles/headings.css">
+    <link rel="stylesheet" href="../Styles/Main.css"> -->
     <title>CS 465 - RA Hazards</title>
 </head>
 <body>
@@ -69,11 +74,15 @@
                 </tr>
                 <tr>
                     <th>Sum of hazards</th>
-                    <td id="sum">N/A</td>
+                    <td id="sum" class="outputCells">0</td>
                 </tr>                
                 <tr>
+                    <th>Total hazards score</th>
+                    <td id="total score" class="outputCells">0</td>
+                </tr>
+                <tr>
                     <th>Mean of hazards</th>
-                    <td id="mean">N/A</td>
+                    <td id="mean" class="outputCells">0.00</td>
                 </tr>
             </table>
         </div>
@@ -83,5 +92,9 @@
     <script src="https://barnziebus.github.io/CS465-Reporting-Tool/RAHazardCalculator/RHLRow.js" type="module"></script>
     <script src="https://barnziebus.github.io/CS465-Reporting-Tool/RAHazardCalculator/summaryCalc.js" type="module"></script>
     <script src="https://barnziebus.github.io/CS465-Reporting-Tool/RAHazardCalculator/RAHazardCalc.js" type="module"></script>
+
+    <!-- <script src="./RHLRow.js" type="module"></script>
+    <script src="./summaryCalc.js" type="module"></script>
+    <script src="./RAHazardCalc.js" type="module"></script> -->
 </body>
 </html>

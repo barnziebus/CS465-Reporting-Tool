@@ -36,6 +36,8 @@ export class Row{
         let likelihoodCell = document.createElement("td");
         let likelihoodSelect = document.createElement("select");
 
+        likelihoodCell.classList.add("centeredCell")
+
         let likelihoodOptions = ["Likelihood", "Low", "Medium", "High", "Certain"];
 
         for (let option of likelihoodOptions) {
@@ -57,6 +59,8 @@ export class Row{
         let consequenceCell = document.createElement("td");
         let consequenceSelect = document.createElement("select");
 
+        consequenceCell.classList.add("centeredCell")
+
         let consequenceOptions = ["Consequence", "Low", "Medium", "High"];
 
         for (let option of consequenceOptions) {
@@ -77,6 +81,8 @@ export class Row{
     buildRiskHazardLevel(rowContainer) {
         let riskHazardLevelCell = document.createElement("td");
 
+        riskHazardLevelCell.classList.add("centeredCell")
+
         riskHazardLevelCell.innerText = "N/A";
 
         this.rowEls["risk hazard level"] = riskHazardLevelCell;
@@ -88,6 +94,9 @@ export class Row{
         let deleteCell = document.createElement("td");
         let deleteButton = document.createElement("button");
 
+        deleteCell.classList.add("centeredCell")
+
+        deleteButton.classList.add("deleteButton")
         deleteButton.innerText = "❌";
 
         this.rowEls["delete"] = deleteButton;
