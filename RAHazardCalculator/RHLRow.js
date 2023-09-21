@@ -1,12 +1,20 @@
 export class Row{
-    constructor(tableContainer, displaySummary) {
+    constructor(id, tableContainer, displaySummary, rowContent, saveData, deleteRow) {
+        this.id = id
         this.rowEls = {}
         this.displaySummary = displaySummary
+        this.deleteRow = deleteRow
+
+        if (rowContent) {
+            this.rowContent = rowContent
+        } else {
+            this.rowContent = {name: null, likelihood: null, consequence: null}
+        }
         
-        this.createRow(tableContainer)
+        this.createRow(tableContainer, saveData)
     }
 
-    createRow(tableContainer) {
+    createRow(tableContainer, saveData) {
         let newRow = document.createElement("tr");
 
         this.buildHazardName(newRow);
@@ -17,7 +25,7 @@ export class Row{
         
         tableContainer.appendChild(newRow);
 
-        this.addRowListeners()
+        this.addRowListeners(saveData)
     }
 
     buildHazardName(rowContainer) {
@@ -25,6 +33,10 @@ export class Row{
         let nameInput = document.createElement("input");
 
         nameInput.placeholder="Example Hazard";
+
+        if (this.rowContent.name) {
+            nameInput.innerText = this.rowContent.name
+        }
         
         this.rowEls["name"] = nameInput;
         
@@ -103,6 +115,7 @@ export class Row{
 
         deleteButton.addEventListener("click", () => {
             rowContainer.remove()
+            this.deleteRow(this.id)
             this.displaySummary()
         })
 
@@ -140,14 +153,16 @@ export class Row{
         return RHL;
     }
 
-    addRowListeners() {
+    addRowListeners(saveData) {
         this.rowEls["likelihood"].addEventListener("change", () => {
             this.updateRHL()
             this.displaySummary()
+            saveData()
         })
         this.rowEls["consequence"].addEventListener("change", () => {
             this.updateRHL()
             this.displaySummary()
+            saveData()
         })
     }
 
@@ -179,4 +194,30 @@ export class Row{
         return rhlCols[riskHazardLevel];
     }
 
+    displayRowContent(rowContent) {
+        this.rowContent.name = rowContent.name
+        this.rowContent.likelihood = rowContent.likelihood
+        this.rowContent.consequence = rowContent.consequence
+
+        let name = rowContent.name
+        let likelihood = rowContent.likelihood
+        let consequence = rowContent.consequence
+
+        this.rowEls["name"].value = name
+        this.rowEls["likelihood"].value = likelihood
+        this.rowEls["consequence"].value = consequence
+
+        this.updateRHL()
+    }
+
+    getRowContent() {
+        let rowContent = {
+            id: this.id,
+            name: this.rowEls["name"].value,
+            likelihood: this.rowEls["likelihood"].value,
+            consequence: this.rowEls["consequence"].value
+        }
+
+        return rowContent
+    }
 }

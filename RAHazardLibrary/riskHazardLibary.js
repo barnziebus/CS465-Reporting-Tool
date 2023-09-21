@@ -44,6 +44,13 @@ let RAHazardData = {
     "Half Joints": {
       "Catagory": "Vulnerable Details and Material Hazards",
       "Sub Catagory": "Other Joints",
+      "Event Description": "Half joints represent a critical vulnerability in bridge structures. When deterioration occurs in these half joints, there is a risk of losing support at the ends of the beams. This, in turn, can lead to the degradation of post-tensioning components, especially the end anchorages housed within these joints.",
+      "Additional Info": [
+        "Half joints in bridge structures constitute a key point of concern. These joints are a critical aspect of a bridge's integrity, as they play a pivotal role in distributing loads and ensuring structural stability. When deterioration or damage is detected in these half joints, it triggers a chain of potential problems that could significantly compromise the overall structural integrity of the bridge.",
+        "One primary concern is the potential loss of support at the ends of the bridge beams. These beams are responsible for bearing the weight of the entire bridge structure and the traffic it carries. A compromised half joint can weaken the connection between these beams and their supports, leading to a gradual or even sudden reduction in load-bearing capacity. This poses a serious safety hazard to both the bridge itself and the vehicles and pedestrians using it.",
+        "Furthermore, the adverse effects extend to the post-tensioning system, which is a crucial component in modern bridge construction. The end anchorages of these post-tensioning elements are often strategically located within the half joints. The presence of damage or deterioration in these joints can compromise the integrity of these anchorages. When anchorages become compromised, it can lead to a domino effect of structural issues. Not only does it jeopardize the immediate load-bearing capacity of the bridge, but it can also result in progressive damage to other bridge components, including cables and tendons used in the post-tensioning system.",
+        "In summary, the condition of half joints within bridge structures is of paramount importance, as their deterioration not only threatens the immediate support of bridge beams but also jeopardizes the long-term integrity of post-tensioning elements and the overall structural safety of the bridge. Regular inspections, maintenance, and timely repairs are essential to mitigate these risks and ensure the continued safety and functionality of the bridge."
+      ],
       "Consequence Description": "Deterioration of the half-joints (reinforcement and concrete) and bearings resulting in the possible loss of beam support, structure capacity and eventual structural failure.",
       "Consequence Rating": "High",
       "Risk Management Measures": [
@@ -55,9 +62,18 @@ let RAHazardData = {
     "Hinge": {
       "Catagory": "Vulnerable Details and Material Hazards",
       "Sub Catagory": "Other Joints",
-      "Consequence Description": "",
-      "Consequence Rating": "",
-      "Risk Management Measures": ["RMM TBC"]
+      "Event Descirption": "Concrete hinges within bridge structures can pose a significant vulnerability. When deterioration occurs in these concrete hinges, it can lead to a reduction in capacity or functional impairment.",
+      "Additional Info": [
+        "Concrete hinges situated within the framework of bridge structures can be critical components that warrant careful attention. These hinges are susceptible to various forms of wear and tear over time, including exposure to environmental factors such as moisture, temperature fluctuations, and chemical agents. When deterioration begins to affect these concrete hinges, it can compromise the overall integrity and performance of the bridge.",
+        "The consequences of concrete hinge deterioration can manifest in several ways. Firstly, it can lead to a reduction in the load-bearing capacity of the bridge, potentially causing safety concerns as the structure may no longer be able to support the intended loads or traffic volume. Secondly, functional impairments may arise, hindering the bridge's ability to fulfill its intended purpose efficiently. This can affect traffic flow, transportation logistics, and overall infrastructure functionality.",
+        "To mitigate these potential issues, it is essential to establish robust inspection and maintenance protocols for concrete hinges within bridge structures. Routine inspections can identify early signs of deterioration, enabling timely repairs or rehabilitation measures. Additionally, the use of advanced materials and construction techniques can help enhance the longevity and durability of concrete hinges, ultimately improving the resilience and longevity of the entire bridge infrastructure."
+      ],
+      "Consequence Description": "Deterioration of the concrete and loss of section to reinforcement in the hinge (if present) could result in a loss of capacity and eventual structural failure.",
+      "Consequence Rating": "High",
+      "Risk Management Measures": [
+        "Inspection the condition of the hinges and surroundingf areas to determine any loss of function and/or deterioration.",
+        "Repair any areas of damage to the water management system protecting the hinges for water ingress."
+      ]
     },
     "Lack of Redundancy": {
       "Catagory": "Vulnerable Details and Material Hazards",
@@ -512,6 +528,12 @@ let RAHazardData = {
     "Unexpected Bearing Movement/Rotation Or Failure To Move/Rotate As Expected": {
       "Catagory": "Condition Hazards - External",
       "Sub Catagory": "Bearings",
+      "Event Description": "Sudden or unanticipated shifts in bridge bearings may indicate a malfunction in their operation. When bearings fail to perform as intended, it can lead to unforeseen stress concentrations arising from improper movement or expansion of the structure.",
+      "Additional Info": [
+        "The detection of unexpected movements in bridge bearings can serve as a critical indicator of potential issues with their proper functioning. Bridge bearings are vital components of a structure, designed to facilitate controlled movement and expansion, and when they deviate from their expected behavior, it raises concerns.",
+        "In instances where these bearings fail to operate as intended, it can set in motion a cascade of problems. One of the most significant concerns is the emergence of unforeseen stress concentrations within the structure. These concentrations of stress can develop due to the irregular movement or expansion patterns resulting from malfunctioning bearings.",
+        "These stress concentrations pose a serious threat to the overall structural integrity of the bridge. They can lead to premature wear and tear on the materials, compromise safety standards, and ultimately reduce the lifespan of the bridge. Addressing these issues promptly through routine inspections and maintenance is essential to ensure the continued reliability and safety of the bridge's operation."
+      ],
       "Consequence Description": "Unexpected movements would likely result in a temporary restriction or closure whilst the defect is fully investigated.",
       "Consequence Rating": "Low",
       "Risk Management Measures": ["RMM TBC"]
@@ -578,6 +600,14 @@ let RAHazardData = {
     "High Chloride Content In Grout": {
       "Catagory": "Condition Hazards - Internal",
       "Sub Catagory": "Grout",
+      "Event Description": "Elevated levels of chloride ions in grout pose a significant risk of chloride induced pitting corrosion to the post-tensioned tendons. This corrosion has the potential to result in a reduction of the tendon's cross-section and overall load-bearing capacity.",
+      "Additional Info": [
+        "A heightened concentration of chloride ions within the grout material presents a serious concern in the context of post-tensioned tendons. Chloride-induced pitting corrosion is a corrosive process that can occur when chloride ions penetrate the protective barriers surrounding the tendon. This corrosion poses a multifaceted threat to the structural integrity and performance of the tendon system.",
+        "Firstly, chloride-induced pitting corrosion initiates localized and often unpredictable areas of damage on the surface of the tendon. These pits can gradually deepen and widen, compromising the integrity of the tendon material. As corrosion progresses, it can lead to the formation of cracks and fissures in the tendon, further weakening its structural integrity.",
+        "Moreover, the corrosion process can result in the loss of cross-sectional area of the tendon. As the metal corrodes away, the effective cross-sectional area of the tendon decreases. This reduction in cross-sectional area directly translates to a diminished load-bearing capacity. In practical terms, it means that the tendon becomes less capable of supporting the applied loads, potentially leading to structural failure.",
+        "Additionally, the corrosion byproducts, such as rust, can exert expansive pressure on the surrounding grout and concrete, causing further damage to the structural elements. This can lead to spalling or cracking of the concrete, compounding the structural deterioration.",
+        "In essence, high chloride ion content in grout can trigger a cascade of destructive processes, ultimately jeopardizing the post-tensioned tendon's structural soundness, load-bearing capacity, and overall performance. Therefore, rigorous monitoring and preventive measures are essential to mitigate the risks associated with chloride-induced pitting corrosion in post-tensioned tendon systems."
+      ],
       "Consequence Description": "Deterioration of the post-tensioning system leading to loss of capacity and eventual structural failure.",
       "Consequence Rating": "High",
       "Risk Management Measures": ["Undertake further PTSI Site Investigations to determine the current condition of the post-tensioning system."]
