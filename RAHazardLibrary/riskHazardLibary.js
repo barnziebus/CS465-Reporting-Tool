@@ -16,6 +16,7 @@ let RAHazardData = {
         "4. Maintenance and repair: Implementing a proactive maintenance and repair program, including periodic inspections and repairs of any damaged mortar or protective coatings, helps preserve the integrity of the structure and prevent further deterioration.",
         "By addressing the risks associated with narrow in-situ mortar and taking preventive measures to mitigate chloride ingress, the rate of deterioration of the reinforcement and post-tensioning system can be minimized. This helps ensure the long-term performance and durability of the structure."
       ],
+      "Likelihood Info": "Check the most recnet PIs/GIs and relevant SIs to determine if the insitu joints have deteriorated to the point that the post-tensioning has become affected. Looking for cracking or signs of water staining and leaching. These will be good indicators that water is penetrating the structure. \n Check any PTSI reprots and consider the current condition of the post-tensioning and if any deterioration has been caused via. the insitu joints.",
       "Consequence Description": "Deterioration of the longitudinal post-tensioning system with possible loss of capacity and eventual failure.",
       "Consequence Rating": "High",
       "Risk Management Measures": ["Monitor the condition of the joints at routine inspections for signs of water leakage and for cracks which could be a sign of tendon failure."]
@@ -23,6 +24,7 @@ let RAHazardData = {
     "Wide In-situ Mortar": {
       "Catagory": "Vulnerable Details and Material Hazards",
       "Sub Catagory": "Segmental Joints",
+      "Likelihood Info": "Check the most recnet PIs/GIs and relevant SIs to determine if the insitu joints have deteriorated to the point that the post-tensioning has become affected. Looking for cracking or signs of water staining and leaching. These will be good indicators that water is penetrating the structure. \n Check any PTSI reprots and consider the current condition of the post-tensioning and if any deterioration has been caused via. the insitu joints.",
       "Consequence Description": "Deterioration of the longitudinal post-tensioning system with possible loss of capacity and eventual failure.",
       "Consequence Rating": "High",
       "Risk Management Measures": ["Monitor the condition of the joints at routine inspections for signs of water leakage and for cracks which could be a sign of tendon failure."]
@@ -38,6 +40,7 @@ let RAHazardData = {
         "Once water and contaminants breach the structure, they initiate and expedite the deterioration process. The reinforcement and post-tensioned elements within the structure bear the brunt of this accelerated deterioration. Over time, the presence of water and contaminants triggers corrosion in the reinforcement and weakens the post-tensioned elements, ultimately compromising the overall structural integrity.",
         "To mitigate these risks effectively, it is crucial to implement robust strategies for sealing and safeguarding construction joints, particularly where they intersect with post-tensioned tendons. Employing reliable waterproofing techniques and implementing diligent maintenance practices can significantly reduce the potential for water and contaminant ingress. By doing so, the rate of deterioration can be minimized, safeguarding the reinforcement and post-tensioned elements and ensuring the long-term durability of the structure."
       ],
+      "Likelihood Info": "Check the most recnet PIs/GIs and relevant SIs to determine if the construction joints have deteriorated to the point that the post-tensioning has become affected. Looking for cracking or signs of water staining and leaching. These will be good indicators that water is penetrating the structure. \n Check any PTSI reprots and consider the current condition of the post-tensioning and if any deterioration has been caused via. the construction joints.",
       "Consequence Rating": "High",
       "Risk Management Measures": ["Monitor the condition of the joints at routine inspections for signs of water leakage and for cracks which could be a sign of tendon failure."]
     },
